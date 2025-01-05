@@ -29,36 +29,38 @@ public class PlayerMovement : MonoBehaviour {
 
     void Start() {
         rb = GetComponent<Rigidbody2D>();
-        LevelLoader = FindObjectOfType<LevelLoader>();
+        LevelLoader = FindFirstObjectByType<LevelLoader>();
     }
 
     void Update() {
         if (!CanMove || !Alive) return;
 
-        MoveX = Input.GetAxis("Horizontal");
-        MoveY = Input.GetAxis("Vertical");
+        MoveX = Input.GetAxisRaw("Horizontal");
+        MoveY = Input.GetAxisRaw("Vertical");
 
         float speedX = speed * MoveX;
         float speedY = speed * MoveY;
 
-        if (Math.Abs(speedX) > 0 && Math.Abs(speedX) > Math.Abs(speedY)) {
-            animator.SetFloat("Speed", Math.Abs(speedX));
-            animator.SetFloat("Speed", Math.Abs(speedX));
+        float absx = Math.Abs(speedX);
+        float absy = Math.Abs(speedY);
+
+        if (absx > 0 && absx > absy) {
+            animator.SetFloat("Speed", absx);
 
             if (speedX > 0) {
                 Direction = 3;
             } else {
                 Direction = 2;
             }
-        } else if (Math.Abs(speedY) > 0 && Math.Abs(speedY) > Math.Abs(speedX)) {
-            animator.SetFloat("Speed", Math.Abs(speedY));
+        } else if (absy > 0 && absy > absx) {
+            animator.SetFloat("Speed", absy);
 
             if (speedY > 0) {
                 Direction = 0;
             } else {
                 Direction = 1;
             }
-        } else if (animator.GetFloat("Speed") != 0) {
+        } else if (animator.GetFloat("Speed") != 0 && absx == 0 && absy == 0) {
             animator.SetFloat("Speed", 0);
         }
 
@@ -66,7 +68,13 @@ public class PlayerMovement : MonoBehaviour {
             animator.SetInteger("Direction", Direction);
         }
 
-        rb.velocity = new Vector2(speedX, speedY);
+        Vector2 movement = new Vector2(speedX, speedY);
+
+        if (movement.magnitude > 0) {
+            movement.Normalize();
+        }
+
+        rb.linearVelocity = movement * 3f;
     }
 
     public void Kill() {
@@ -74,7 +82,7 @@ public class PlayerMovement : MonoBehaviour {
 
         Alive = false;
         
-        rb.velocity = new Vector2(0, 0);
+        rb.linearVelocity = new Vector2(0, 0);
         animator.SetFloat("Speed", 0f);
         rb.constraints = RigidbodyConstraints2D.FreezeAll;
 

@@ -20,12 +20,12 @@ public class CarDriving : MonoBehaviour {
 
         float speedYf = speedY * MoveY;
 
-        rb.velocity = new Vector2(speedX, speedYf);
+        rb.linearVelocity = new Vector2(speedX, speedYf);
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.CompareTag("Obstacle")) {
-            rb.velocity = new Vector2(0, 0);
+            rb.linearVelocity = new Vector2(0, 0);
             rb.constraints = RigidbodyConstraints2D.FreezeAll;
 
             LevelLoader.RestartLevel();
