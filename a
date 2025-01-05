@@ -1,0 +1,104 @@
+* [33m5d057e9[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m construction site
+* [33m4e12ce1[m feat: edit final podrum
+* [33m5c4fc20[m feat: edit rooms
+* [33m6cde486[m feat: add light blockers to podrums
+* [33m35aebc9[m feat: ulica changes
+* [33mebd1d32[m fix na podrum i add fence on ulica
+* [33m641ec08[m light add and bug fix in podrumite
+* [33m9373cc7[m huge update, street 90% finished, +new textures AGAIN
+* [33m0a3c57e[m fix: improve aleksous (the dog)'s lighting
+*   [33m4f01148[m Merge branch 'main' of https://github.com/nullobjects/Through-The-Darkness
+[32m|[m[33m\[m  
+[32m|[m * [33m591e125[m (maybe) final scene added
+* [33m|[m [33m9d4ec84[m feat: lighting changes to rooms
+[33m|[m[33m/[m  
+* [33m8c8171a[m fix: podrum 2 wall bounds
+* [33m77a05ba[m fix: remove self shadows on block
+* [33m7a26cff[m fix: podrum 1 light
+* [33mabe5353[m fix: player collision and camera bounds
+* [33m2223c31[m fix: yess thank you
+* [33mc569317[m 1 new finished level (car anim) + 3 new textures
+* [33md7bb9bb[m podrum 4 update i fix podrum 3 (site box coll se fix)
+* [33m3fe0acf[m podrum 3 update i fix
+* [33m2909ffc[m podrum 1 i 2 update i fix
+* [33m6eb98d0[m new level complete + new textures AGAIN
+* [33m2d4efa7[m fix podrum 2
+* [33m4847ff1[m fix room
+* [33m12714c6[m main menu and room
+* [33meb7be16[m new angles
+*   [33m2a9842f[m Merge branch 'main' of https://github.com/nullobjects/Through-The-Darkness
+[34m|[m[35m\[m  
+[34m|[m * [33ma4a599c[m feat: player candle lighting improvement
+[34m|[m * [33m15776b6[m a lot of new textures + new enemy
+[34m|[m * [33m55255e5[m fix: omg omg this is what i needed
+* [35m|[m [33mf851932[m colliders fixed
+[35m|[m[35m/[m  
+* [33m47940e6[m fix: podrum 1 light blockers
+* [33m01a8136[m fix: omg omg ambadeblou
+* [33m27e2c51[m fix: oh my god ambassing
+* [33m8b0f511[m fix: lighting edits
+* [33mdf94342[m feat: lighting and animations
+* [33m2c46fcf[m podrum 4 i bug fix
+* [33m6d684f5[m feat: lighting and effects on street
+* [33m5b2fcad[m fix: chair
+* [33mf7bbc35[m fix: remove level3
+* [33m09aa6fd[m fix: changes to ulica
+* [33m0f86078[m fix: player animation bug
+* [33meae3ade[m fix: camera movement
+* [33m85cd517[m bug fix
+* [33m9487541[m fix: add player to all
+* [33m2d2bdec[m podrum 3
+* [33m8b01100[m feat: change character, add animations
+*   [33m0ef8f75[m Merge branch 'main' of https://github.com/nullobjects/Through-The-Darkness
+[36m|[m[1;31m\[m  
+[36m|[m * [33mf7a6cec[m fix: unity push files
+[36m|[m * [33m91910e0[m new character
+* [1;31m|[m [33m51d6912[m texture i podrum 2
+[1;31m|[m[1;31m/[m  
+* [33m9c2c24f[m Podrum i mal promena kaj ulicata
+* [33me9ab58b[m new room redesign and street half done, +new textures
+* [33m27caf56[m feat: rain particle effect
+* [33mb9f85c6[m nesto
+* [33m7037ba4[m clean up
+*   [33m57c9e6a[m Merge branch 'main' of https://github.com/nullobjects/Through-The-Darkness
+[1;32m|[m[1;33m\[m  
+[1;32m|[m * [33mfc7b8ea[m fix: collision for player on all scenes
+[1;32m|[m * [33m2c40736[m Update Level1.unity
+[1;32m|[m *   [33m86c8eb1[m Merge branch 'main' of https://github.com/nullobjects/Through-The-Darkness
+[1;32m|[m [1;34m|[m[1;35m\[m  
+[1;32m|[m [1;34m|[m * [33m2d0b619[m Create README.md
+[1;32m|[m * [1;35m|[m [33me1cd6d7[m fix: player rotating when touching colliders
+[1;32m|[m [1;35m|[m[1;35m/[m  
+[1;32m|[m *   [33mccdc0b0[m Merge branch 'main' of https://github.com/nullobjects/Through-The-Darkness
+[1;32m|[m [1;36m|[m[31m\[m  
+[1;32m|[m [1;36m|[m * [33m1d3dd4d[m auggghhh
+[1;32m|[m * [31m|[m [33m8ea5259[m door fix
+[1;32m|[m [31m|[m[31m/[m  
+* [31m/[m [33m881eb8c[m vizba
+[31m|[m[31m/[m  
+* [33m79963e6[m more textures
+* [33m2c89cae[m starting room
+* [33m6d0abef[m Level 2 started, main menu bg changed
+* [33me0d53c6[m new textures
+* [33m457ee81[m monster added
+*   [33mf0196c8[m Merge branch 'main' of https://github.com/nullobjects/Through-The-Darkness
+[32m|[m[33m\[m  
+[32m|[m * [33ma1be025[m fix: update
+[32m|[m * [33m823de76[m feat: candle lighting
+[32m|[m * [33m8e6629f[m broken movement
+* [33m|[m [33mcd47459[m Main menu with options menu
+[33m|[m[33m/[m  
+* [33m93ab8d4[m auhghghgh
+* [33m2386bf0[m add walls
+* [33mf2d0722[m fix: amongus
+* [33m317a6dc[m lvl 3 test
+* [33mb80eca9[m old anim
+* [33m01054f4[m textures added
+* [33m181d75b[m fix: update movement
+* [33m535711d[m feat: push
+* [33m5c2b841[m fix: remove animations, need to remake them
+* [33mec27a3d[m feat: add penguin
+* [33m605fb6a[m fix: mozebi
+* [33m7921cdc[m feat: player and player movement
+* [33m58bc8c0[m Initialize Project
+* [33mb5ca24b[m Initial commit
