@@ -24,7 +24,7 @@ public class CandleMovement : MonoBehaviour {
             }
         }
 
-        int Direction = playerMovement.Direction;
+        int Direction = playerMovement.GetDirection();
 
         Renderer renderer = GetComponent<Renderer>();
 

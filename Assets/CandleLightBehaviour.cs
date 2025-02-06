@@ -14,7 +14,7 @@ public class CandleLightBehaviour : MonoBehaviour {
     }
 
     void Update() {
-        int Direction = playerMovement.Direction;
+        int Direction = playerMovement.GetDirection();
 
         Vector3 newPos = new Vector3(target.position.x + 0.3f, target.position.y - 0.1f, 0f);
         if (Direction == 0) {

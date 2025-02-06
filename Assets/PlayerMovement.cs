@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour {
     public float speed = 3f;
     private float MoveX;
     private float MoveY;
-    public int Direction = 1;
+    private int Direction = 1;
     public Animator animator;
     private bool Alive = true;
     private bool CanMove = true;
@@ -65,7 +65,7 @@ public class PlayerMovement : MonoBehaviour {
             movement.Normalize();
         }
 
-        rb.linearVelocity = movement * 3f;
+        rb.linearVelocity = movement * speed;
     }
 
     public void Kill() {
@@ -93,7 +93,9 @@ public class PlayerMovement : MonoBehaviour {
     private IEnumerator DelayedRestart() {
         yield return new WaitForSeconds(2f);
 
-        LevelLoader.RestartLevel();
+        if (LevelLoader != null) {
+            LevelLoader.RestartLevel();
+        }
     }
 
     void OnCollisionEnter2D(Collision2D other) {
