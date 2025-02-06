@@ -44,25 +44,16 @@ public class PlayerMovement : MonoBehaviour {
         float absx = Math.Abs(speedX);
         float absy = Math.Abs(speedY);
 
-        if (absx > 0 && absx > absy) {
-            animator.SetFloat("Speed", absx);
-
-            if (speedX > 0) {
-                Direction = 3;
+        if (absx > 0 || absy > 0) {
+            if (absx >= absy) {
+                Direction = (speedX > 0) ? 3 : 2;
             } else {
-                Direction = 2;
+                Direction = (speedY > 0) ? 0 : 1;
             }
-        } else if (absy > 0 && absy > absx) {
-            animator.SetFloat("Speed", absy);
-
-            if (speedY > 0) {
-                Direction = 0;
-            } else {
-                Direction = 1;
-            }
-        } else if (animator.GetFloat("Speed") != 0 && absx == 0 && absy == 0) {
-            animator.SetFloat("Speed", 0);
         }
+
+        float newSpeed = Mathf.Max(absx, absy);
+        animator.SetFloat("Speed", newSpeed);
 
         if (animator.GetInteger("Direction") != Direction) {
             animator.SetInteger("Direction", Direction);

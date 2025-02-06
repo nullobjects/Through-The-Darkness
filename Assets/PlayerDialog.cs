@@ -20,13 +20,9 @@ public class PlayerDialog : MonoBehaviour {
             messageText = dialogBox.transform.Find("MessageText")?.GetComponent<TMP_Text>();
             messagePanel = dialogBox.transform.Find("MessagePanel")?.GetComponent<RectTransform>();
             canvasGroup = dialogBox.GetComponent<CanvasGroup>();
-            
-            if (messagePanel != null) {
-                messagePanel.sizeDelta = new Vector2(0,0);
-            }
 
             if (messageText != null) {
-
+                messageText.text = "";
                 ResizeBubble();
             }
 
@@ -51,7 +47,7 @@ public class PlayerDialog : MonoBehaviour {
 
     IEnumerator GenerateText(string text) {
         if (messageText != null) {
-            ResizeBubble();
+            //ResizeBubble();
             messageText.text = "";
 
             LayoutRebuilder.ForceRebuildLayoutImmediate(messageText.rectTransform);
@@ -62,6 +58,7 @@ public class PlayerDialog : MonoBehaviour {
 
             foreach (char letter in text) {
                 messageText.text += letter;
+                messageText.ForceMeshUpdate();
                 ResizeBubble();
                 yield return new WaitForSeconds(0.05f);
             }
@@ -87,16 +84,13 @@ public class PlayerDialog : MonoBehaviour {
         if (messagePanel != null && messageText != null) {
             LayoutRebuilder.ForceRebuildLayoutImmediate(messageText.rectTransform);
 
-            float newWidth = messageText.textBounds.size.x;
-            float newHeight = messageText.textBounds.size.y * 2f - 0.6f;
+            float newWidth = Mathf.Max(messageText.textBounds.size.x, 0);
+            float newHeight = Mathf.Max(messageText.textBounds.size.y * 1.75f, 0);
 
-            messagePanel.sizeDelta = new Vector2(-2.5f + newWidth, -0.4f + newHeight);
+            messagePanel.offsetMax = new Vector2(-2.5f + newWidth, -1.5f + newHeight);
+            messagePanel.offsetMin = new Vector2(messagePanel.offsetMin.x, messagePanel.offsetMin.y);
 
-            messagePanel.pivot = new Vector2(0f, 1f);
-
-            Vector2 currentPos = messagePanel.anchoredPosition;
-            messagePanel.anchoredPosition = new Vector2(currentPos.x, currentPos.y);
+            messageText.rectTransform.anchoredPosition = new Vector2(0.125f, -1.55f + newHeight * 0.8f);
         }
     }
-
 }
