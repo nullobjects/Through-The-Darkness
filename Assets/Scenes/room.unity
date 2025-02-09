@@ -10426,7 +10426,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  Direction: 3
   animator: {fileID: 1674485215}
   cm: {fileID: 0}
   kc: {fileID: 0}
@@ -10513,10 +10512,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47ac7d7490897a148a89af00c8937f16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogBox: {fileID: 0}
-  messageText: {fileID: 0}
-  messagePanel: {fileID: 0}
-  canvasGroup: {fileID: 0}
+  dialogBox: {fileID: 266842306}
+  messageText: {fileID: 156687002}
+  messagePanel: {fileID: 1771354149}
   isTyping: 0
 --- !u!1 &1691209759
 GameObject:

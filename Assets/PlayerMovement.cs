@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour {
     private int Direction = 1;
     public Animator animator;
     private bool Alive = true;
-    private bool CanMove = true;
+    public bool CanMove = true;
     private Rigidbody2D rb;
     private LevelLoader LevelLoader;
     private bool CanDie = true;
@@ -110,6 +110,7 @@ public class PlayerMovement : MonoBehaviour {
         {
             Destroy(other.gameObject);
             cm.flag = true;
+            PlayerScript.AddCoins(1);
         }
         if (other.gameObject.CompareTag("key"))
         {

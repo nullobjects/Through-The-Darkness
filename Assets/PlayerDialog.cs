@@ -2,30 +2,24 @@ using System.Collections;
 using UnityEngine;
 using TMPro;
 using System.Collections.Generic;
-using UnityEngine.UI; // Needed for LayoutRebuilder
+using UnityEngine.UI;
+using UnityEngine.Rendering.UI; // Needed for LayoutRebuilder
 
 public class PlayerDialog : MonoBehaviour {
     public GameObject dialogBox;
     public TMP_Text messageText;
     public RectTransform messagePanel;
-    public CanvasGroup canvasGroup;
+    private CanvasGroup canvasGroup;
     public Queue<string> messageQueue = new Queue<string>();
     public bool isTyping = false;
+    public MerchantScript MerchantScript;
 
     void Start() {
-        if (dialogBox == null) {
-            dialogBox = transform.Find("Canvas_DialogBox")?.gameObject;
-        }
         if (dialogBox != null) {
-            messageText = dialogBox.transform.Find("MessageText")?.GetComponent<TMP_Text>();
-            messagePanel = dialogBox.transform.Find("MessagePanel")?.GetComponent<RectTransform>();
+            messageText.text = "";
+            ResizeBubble();
+
             canvasGroup = dialogBox.GetComponent<CanvasGroup>();
-
-            if (messageText != null) {
-                messageText.text = "";
-                ResizeBubble();
-            }
-
             if (canvasGroup != null) {
                 canvasGroup.alpha = 0;
                 canvasGroup.interactable = false;
@@ -76,6 +70,12 @@ public class PlayerDialog : MonoBehaviour {
                 StartCoroutine(GenerateText(messageQueue.Dequeue()));
             } else {
                 isTyping = false;
+
+                if (MerchantScript != null) {
+                    // Merchants only have the dialog popup once so
+                    // We can do a callback for the player to interact again for the shopui
+                    MerchantScript.OnMerchantDialogFinish();
+                }
             }
         }
     }
