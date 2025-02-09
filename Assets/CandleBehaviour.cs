@@ -28,10 +28,14 @@ public class CandleMovement : MonoBehaviour {
     private IEnumerator DelayedStart() {
         yield return new WaitForSeconds(0.1f);
     
-        print(merchantShop.GetItem("Flashlight").purchased);
         if (merchantShop.GetItem("Flashlight").purchased) {
             spriteRenderer.sprite = FlashlightSprite;
             flashlight_light.gameObject.SetActive(true);    
+        }
+        if (merchantShop.GetItem("MovementSpeed").purchased) {
+            playerMovement.BonusSpeed = 1f;
+        } else {
+            playerMovement.BonusSpeed = 0f;
         }
     }
 

@@ -13,6 +13,7 @@ public class MerchantScript : MonoBehaviour {
     private bool finished_dialog = false;
 
     private void Start() {
+        if (interactPrompt == null) return;
         interactPrompt.gameObject.SetActive(false);
         shopUI.SetActive(false);
     }
@@ -32,6 +33,8 @@ public class MerchantScript : MonoBehaviour {
     }
 
     public void OnMerchantDialogFinish() {
+        if (interactPrompt == null) return;
+
         interactPrompt.gameObject.SetActive(true);
         finished_dialog = true;
     }

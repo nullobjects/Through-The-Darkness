@@ -85,12 +85,13 @@ public class PlayerDialog : MonoBehaviour {
             LayoutRebuilder.ForceRebuildLayoutImmediate(messageText.rectTransform);
 
             float newWidth = Mathf.Max(messageText.textBounds.size.x, 0);
-            float newHeight = Mathf.Max(messageText.textBounds.size.y * 1.75f, 0);
+            float newHeight = Mathf.Max(messageText.textBounds.size.y * 1f, 0);
 
-            messagePanel.offsetMax = new Vector2(-2.5f + newWidth, -1.5f + newHeight);
-            messagePanel.offsetMin = new Vector2(messagePanel.offsetMin.x, messagePanel.offsetMin.y);
+            messagePanel.offsetMax = new Vector2(-2.5f + newWidth, -1.1f + newHeight * 1.9f);
+            messagePanel.offsetMin = new Vector2(messagePanel.offsetMin.x, -0.25f);
+            messagePanel.pivot = new Vector2(0.5f, 0);
 
-            messageText.rectTransform.anchoredPosition = new Vector2(0.125f, -1.55f + newHeight * 0.8f);
+            messageText.rectTransform.anchoredPosition = new Vector2(0.125f, -1.425f + newHeight * 0.975f);
         }
     }
 }

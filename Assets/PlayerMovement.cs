@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour {
     public float speed = 3f;
+    public float BonusSpeed = 0f;
     private float MoveX;
     private float MoveY;
     private int Direction = 1;
@@ -38,8 +39,9 @@ public class PlayerMovement : MonoBehaviour {
         MoveX = Input.GetAxisRaw("Horizontal");
         MoveY = Input.GetAxisRaw("Vertical");
 
-        float speedX = speed * MoveX;
-        float speedY = speed * MoveY;
+        float TotalSpeed = speed + BonusSpeed;
+        float speedX = TotalSpeed * MoveX;
+        float speedY = TotalSpeed * MoveY;
 
         float absx = Math.Abs(speedX);
         float absy = Math.Abs(speedY);
@@ -65,7 +67,7 @@ public class PlayerMovement : MonoBehaviour {
             movement.Normalize();
         }
 
-        rb.linearVelocity = movement * speed;
+        rb.linearVelocity = movement * TotalSpeed;
     }
 
     public void Kill() {
@@ -115,7 +117,9 @@ public class PlayerMovement : MonoBehaviour {
         if (other.gameObject.CompareTag("key"))
         {
             Destroy(other.gameObject);
-            kc.hasKey = true;
+            if (kc != null) {
+                kc.hasKey = true;
+            }
         }
     }
     // Jumping version for blocks but it's bugged bruh //
