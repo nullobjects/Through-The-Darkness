@@ -1,0 +1,289 @@
+fileFormatVersion: 2
+guid: 40ac61a1d45c4c64d8e567bba7ca972b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2685291565507296524
+    second: Unity_wqewM63qSy-removebg-preview_0
+  - first:
+      213: -509416132477524917
+    second: Unity_wqewM63qSy-removebg-preview_1
+  - first:
+      213: 8282408424099230998
+    second: Unity_wqewM63qSy-removebg-preview_2
+  - first:
+      213: 32570671023175867
+    second: Unity_wqewM63qSy-removebg-preview_3
+  - first:
+      213: -7517097110397071019
+    second: Unity_wqewM63qSy-removebg-preview_4
+  - first:
+      213: -1616168681538592196
+    second: Unity_wqewM63qSy-removebg-preview_5
+  - first:
+      213: -5746237240084843596
+    second: Unity_wqewM63qSy-removebg-preview_6
+  - first:
+      213: -3658079297807562948
+    second: Unity_wqewM63qSy-removebg-preview_7
+  - first:
+      213: 2599757516834696101
+    second: Unity_wqewM63qSy-removebg-preview_8
+  - first:
+      213: -817967283257143335
+    second: Unity_wqewM63qSy-removebg-preview_9
+  - first:
+      213: -7036708609163569889
+    second: Unity_wqewM63qSy-removebg-preview_10
+  - first:
+      213: 7147431439300472629
+    second: Unity_wqewM63qSy-removebg-preview_11
+  - first:
+      213: 7435930397479309045
+    second: Unity_wqewM63qSy-removebg-preview_12
+  - first:
+      213: -2497540084667356826
+    second: Unity_wqewM63qSy-removebg-preview_13
+  - first:
+      213: -5951756534959509282
+    second: Unity_wqewM63qSy-removebg-preview_14
+  - first:
+      213: -4757322216401427554
+    second: Unity_wqewM63qSy-removebg-preview_15
+  - first:
+      213: 925832987073370304
+    second: Unity_wqewM63qSy-removebg-preview_16
+  - first:
+      213: -7921217116764836175
+    second: Unity_wqewM63qSy-removebg-preview_17
+  - first:
+      213: -464104077666668130
+    second: Unity_wqewM63qSy-removebg-preview_18
+  - first:
+      213: 494071748989861613
+    second: Unity_wqewM63qSy-removebg-preview_19
+  - first:
+      213: -8618313907943114775
+    second: Unity_wqewM63qSy-removebg-preview_20
+  - first:
+      213: -3555988944052908682
+    second: Unity_wqewM63qSy-removebg-preview_21
+  - first:
+      213: 8243875527559030091
+    second: Unity_wqewM63qSy-removebg-preview_22
+  - first:
+      213: -4541144801493057780
+    second: Unity_wqewM63qSy-removebg-preview_23
+  - first:
+      213: -8142922155875781102
+    second: Unity_wqewM63qSy-removebg-preview_24
+  - first:
+      213: -8783076935237603863
+    second: Unity_wqewM63qSy-removebg-preview_25
+  - first:
+      213: 8380001237497854972
+    second: Unity_wqewM63qSy-removebg-preview_26
+  - first:
+      213: -2850741701117098982
+    second: Unity_wqewM63qSy-removebg-preview_27
+  - first:
+      213: -3471501197266918080
+    second: Unity_wqewM63qSy-removebg-preview_28
+  - first:
+      213: 4533593159675602435
+    second: Unity_wqewM63qSy-removebg-preview_29
+  - first:
+      213: 8142437489256050989
+    second: Unity_wqewM63qSy-removebg-preview_30
+  - first:
+      213: 2601252339687189244
+    second: Unity_wqewM63qSy-removebg-preview_31
+  - first:
+      213: 1024875324975554095
+    second: Unity_wqewM63qSy-removebg-preview_32
+  - first:
+      213: -9051603851417030286
+    second: Unity_wqewM63qSy-removebg-preview_33
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: these_traps_only_work_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 366
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 662ec25554d7de0439630847b40973fb
+      internalID: 683335687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a4f2d79094c0ef540b47352bf42baf96
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Unity_wqewM63qSy-removebg-preview_0: 2685291565507296524
+      Unity_wqewM63qSy-removebg-preview_1: -509416132477524917
+      Unity_wqewM63qSy-removebg-preview_10: -7036708609163569889
+      Unity_wqewM63qSy-removebg-preview_11: 7147431439300472629
+      Unity_wqewM63qSy-removebg-preview_12: 7435930397479309045
+      Unity_wqewM63qSy-removebg-preview_13: -2497540084667356826
+      Unity_wqewM63qSy-removebg-preview_14: -5951756534959509282
+      Unity_wqewM63qSy-removebg-preview_15: -4757322216401427554
+      Unity_wqewM63qSy-removebg-preview_16: 925832987073370304
+      Unity_wqewM63qSy-removebg-preview_17: -7921217116764836175
+      Unity_wqewM63qSy-removebg-preview_18: -464104077666668130
+      Unity_wqewM63qSy-removebg-preview_19: 494071748989861613
+      Unity_wqewM63qSy-removebg-preview_2: 8282408424099230998
+      Unity_wqewM63qSy-removebg-preview_20: -8618313907943114775
+      Unity_wqewM63qSy-removebg-preview_21: -3555988944052908682
+      Unity_wqewM63qSy-removebg-preview_22: 8243875527559030091
+      Unity_wqewM63qSy-removebg-preview_23: -4541144801493057780
+      Unity_wqewM63qSy-removebg-preview_24: -8142922155875781102
+      Unity_wqewM63qSy-removebg-preview_25: -8783076935237603863
+      Unity_wqewM63qSy-removebg-preview_26: 8380001237497854972
+      Unity_wqewM63qSy-removebg-preview_27: -2850741701117098982
+      Unity_wqewM63qSy-removebg-preview_28: -3471501197266918080
+      Unity_wqewM63qSy-removebg-preview_29: 4533593159675602435
+      Unity_wqewM63qSy-removebg-preview_3: 32570671023175867
+      Unity_wqewM63qSy-removebg-preview_30: 8142437489256050989
+      Unity_wqewM63qSy-removebg-preview_31: 2601252339687189244
+      Unity_wqewM63qSy-removebg-preview_32: 1024875324975554095
+      Unity_wqewM63qSy-removebg-preview_33: -9051603851417030286
+      Unity_wqewM63qSy-removebg-preview_4: -7517097110397071019
+      Unity_wqewM63qSy-removebg-preview_5: -1616168681538592196
+      Unity_wqewM63qSy-removebg-preview_6: -5746237240084843596
+      Unity_wqewM63qSy-removebg-preview_7: -3658079297807562948
+      Unity_wqewM63qSy-removebg-preview_8: 2599757516834696101
+      Unity_wqewM63qSy-removebg-preview_9: -817967283257143335
+      these_traps_only_work_0: 683335687
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

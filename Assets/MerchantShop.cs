@@ -10,8 +10,8 @@ public class MerchantShop : MonoBehaviour {
     }
 
     private Item[] items = {
-        new Item { name = "Flashlight", price = 1, purchased = false },
-        new Item { name = "MovementSpeed", price = 1, purchased = false }
+        new Item { name = "Flashlight", price = 2, purchased = false },
+        new Item { name = "MovementSpeed", price = 2, purchased = false }
     };
 
     void Start() {
