@@ -12,7 +12,8 @@ public class PlayerDialog : MonoBehaviour {
     private CanvasGroup canvasGroup;
     public Queue<string> messageQueue = new Queue<string>();
     public bool isTyping = false;
-    public MerchantScript MerchantScript;
+    public bool IsMerchant = false;
+    private MerchantScript MerchantScript;
 
     void Start() {
         if (dialogBox != null) {
@@ -25,6 +26,10 @@ public class PlayerDialog : MonoBehaviour {
                 canvasGroup.interactable = false;
                 canvasGroup.blocksRaycasts = false;
             }
+        }
+
+        if (IsMerchant) {
+            MerchantScript = FindFirstObjectByType<MerchantScript>();
         }
     }
 
@@ -71,7 +76,7 @@ public class PlayerDialog : MonoBehaviour {
             } else {
                 isTyping = false;
 
-                if (MerchantScript != null) {
+                if (IsMerchant) {
                     // Merchants only have the dialog popup once so
                     // We can do a callback for the player to interact again for the shopui
                     MerchantScript.OnMerchantDialogFinish();

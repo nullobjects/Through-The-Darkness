@@ -43162,7 +43162,7 @@ MonoBehaviour:
   messageText: {fileID: 366586839}
   messagePanel: {fileID: 44841037}
   isTyping: 0
-  MerchantScript: {fileID: 0}
+  IsMerchant: 0
 --- !u!1 &1422099040
 GameObject:
   m_ObjectHideFlags: 0
@@ -50627,7 +50627,7 @@ MonoBehaviour:
   messageText: {fileID: 1465827282}
   messagePanel: {fileID: 463181759}
   isTyping: 0
-  MerchantScript: {fileID: 1690639537}
+  IsMerchant: 1
 --- !u!1 &1691082006
 GameObject:
   m_ObjectHideFlags: 0

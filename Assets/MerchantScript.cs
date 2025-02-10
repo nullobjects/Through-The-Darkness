@@ -47,10 +47,8 @@ public class MerchantScript : MonoBehaviour {
     }
 
     public void OnMerchantDialogFinish() {
-        if (interactPrompt == null) return;
-
-        interactPrompt.gameObject.SetActive(true);
         finished_dialog = true;
+        playerInRange = false;
     }
 
     private void OpenMerchantShop() {

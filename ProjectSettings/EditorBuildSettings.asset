@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Podrum 2.unity
     guid: 6870aea2cc1e84d44bd0ef1a9786c8ff
   - enabled: 1
-    path: Assets/Scenes/after_podrum_3.unity
+    path: Assets/Scenes/after_podrum_2.unity
     guid: 33368855ee1f6b24f8328944aa473256
   - enabled: 1
     path: Assets/Scenes/Podrum 3.unity
