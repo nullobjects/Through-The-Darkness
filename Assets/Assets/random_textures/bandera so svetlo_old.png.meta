@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bandera so svetlo_old_0: -1077810278363139543
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
