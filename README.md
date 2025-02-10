@@ -1,7 +1,6 @@
 # ｔｈｒｏｕｇｈ ｔｈｅ ｄａｒｋｎｅｓｓ
 
 Welcome to Through the darkness, a short 2D game that takes you on an adventure through a city, underground tunnels, and a treacherous maze.
-This is a student game project that was made for "Mediums and Communications" in 5 days.
 
 # Installation
 1. Play the game on [itch.io](https://viks1.itch.io/through-the-darkness)
