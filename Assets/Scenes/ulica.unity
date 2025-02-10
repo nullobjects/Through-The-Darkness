@@ -33573,7 +33573,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 458910527682066722, guid: 92da475b3a0de044ca4de5d5df7dca02, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5510341410562735337, guid: 92da475b3a0de044ca4de5d5df7dca02, type: 3}
       propertyPath: m_RootOrder
@@ -43162,7 +43162,7 @@ MonoBehaviour:
   messageText: {fileID: 366586839}
   messagePanel: {fileID: 44841037}
   isTyping: 0
-  MerchantScript: {fileID: 1690639537}
+  MerchantScript: {fileID: 0}
 --- !u!1 &1422099040
 GameObject:
   m_ObjectHideFlags: 0
@@ -59359,6 +59359,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: {fileID: 0}
+  key2: {fileID: 0}
 --- !u!58 &1783064557
 CircleCollider2D:
   m_ObjectHideFlags: 0

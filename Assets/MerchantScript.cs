@@ -11,24 +11,38 @@ public class MerchantScript : MonoBehaviour {
     public PlayerDialog playerDialog;
     public List<string> messages = new List<string>();
     private bool finished_dialog = false;
+    private GameObject player;
+    private float interactDistance = 3f;
 
     private void Start() {
+        player = GameObject.FindWithTag("Player");
+
+        if (shopUI != null ) {
+            shopUI.SetActive(false);
+        }
+
         if (interactPrompt == null) return;
         interactPrompt.gameObject.SetActive(false);
-        shopUI.SetActive(false);
     }
 
-    private void Update() {
-        if (playerInRange && Input.GetKeyDown(KeyCode.E)) {
-            OpenMerchantShop();
-            interactPrompt.gameObject.SetActive(false);
-        }
-    }
+    void Update() {
+        if (player != null) {
+            float distance = Vector2.Distance(transform.position, player.transform.position);
 
-    private void OnTriggerEnter2D(UnityEngine.Collider2D other) {
-        if (other.CompareTag("Player")) {
-            playerInRange = true;
-            interactPrompt.gameObject.SetActive(true);
+            if (shopUI == null || shopUI.activeSelf) return;
+
+            if (distance <= interactDistance && !playerInRange) {
+                playerInRange = true;
+                interactPrompt.gameObject.SetActive(true);
+            } else if (distance > interactDistance && playerInRange) {
+                playerInRange = false;
+                interactPrompt.gameObject.SetActive(false);
+            }
+
+            if (playerInRange && Input.GetKeyDown(KeyCode.E)) {
+                OpenMerchantShop();
+                interactPrompt.gameObject.SetActive(false);
+            }
         }
     }
 
@@ -37,15 +51,6 @@ public class MerchantScript : MonoBehaviour {
 
         interactPrompt.gameObject.SetActive(true);
         finished_dialog = true;
-    }
-
-    private void OnTriggerExit2D(UnityEngine.Collider2D other) {
-        if (other.CompareTag("Player")) {
-            playerInRange = false;
-            if (interactPrompt != null) {
-                interactPrompt.gameObject.SetActive(false);
-            }
-        }
     }
 
     private void OpenMerchantShop() {
